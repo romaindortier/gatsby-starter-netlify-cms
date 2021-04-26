@@ -12,6 +12,8 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  testcustomfield,
+  testcustomfield2,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -25,6 +27,8 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            <p>customfield 1 {testcustomfield}</p>
+            <p>customfield 2 {testcustomfield2}</p>
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -51,6 +55,8 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  testcustomfield: PropTypes.string,
+  testcustomfield2: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -74,6 +80,8 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        testcustomfield={post.frontmatter.testcustomfield}
+        testcustomfield2={post.frontmatter.testcustomfield2}
       />
     </Layout>
   )
@@ -97,6 +105,8 @@ export const pageQuery = graphql`
         title
         description
         tags
+        testcustomfield
+        testcustomfield2
       }
     }
   }
