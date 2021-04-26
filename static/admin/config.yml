@@ -23,6 +23,8 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Test custom field", name: "testcustomfield", widget: "boolean"}
+      - {label: "Test custom field 2", name: "testcustomfield2", widget: "string"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
