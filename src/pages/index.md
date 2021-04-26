@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great !
+title: Great man !
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: Support sustainable farming while enjoying a cupoooo
 mainpitch:
   title: Why Kaldi
   description: >
