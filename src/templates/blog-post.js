@@ -105,8 +105,6 @@ export const pageQuery = graphql`
         title
         description
         tags
-        testcustomfield
-        testcustomfield2
       }
     }
   }
